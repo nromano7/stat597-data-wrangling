@@ -175,6 +175,7 @@ d <- d %>% mutate(play_time=as.POSIXct(play_time,origin="1970-01-01", tz="EST"),
 d %>% select(-home_wp, -away_wp) %>% write.csv(file = "MyData.csv")
 ```
 
+Github: https://github.com/nromano7/stat597-data-wrangling
 
 ## Motivation
 The average NFL (National Football League) team is valued at approximately \$2.57B. With 32  teams in the league, the collective value of the league approaches \$100B. It goes without saying that there is a lot of money on the line when it comes to the sport. With only 16 games in a season, teams are fighting for a compeitive edge with the hope of making the Superbowl. Football is still well behind other sports like baseball and basketball when it comes to advanced analytics however there has been a noticable adoption of data collection and analytics in recent years. Teams are collecting more data than ever, tracking in game position of a player, player attributes, and box score statistics among much else. While some data is available to the public, much is kept proprietary. 
